@@ -1,0 +1,8 @@
+.form-control{
+	margin-bottom: 20px;
+}
+
+#btnUp, #btnDown, #btnDelete{
+	float: right;
+	margin-right: 10px;
+}

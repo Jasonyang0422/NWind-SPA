@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NWind-SPA</title>
+    <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
+    <script src="/angular/angular.js"></script>
+    <script src='/nwindSpa.js'></script>
+  </head>
+  <body>
+  	<div class='container'>
+  		<h1>Welcome to NWind SPA</h1>
+  		<div id='error' class='alert alert-danger'>Processing  error</div>
+  		<div class='well'>
+  			<input type='text' class='form-control' placeholder='name'/>
+  			<input type='text' class='form-control' placeholder='priority'/>
+  			<button type='button' class='btn btn-primary'>Save</button>
+  		</div>
+  		<ul class='list-group'>
+  			<li class='list-group-item'>
+  				Foo
+  				<span class='badge'>1</span>
+  				<button id='btnDelete' type='button' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-trash' aria-hidden='true'></span></button>
+  				<button id='btnDown' type='button' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-arrow-down' aria-hidden='true'></span></button>
+  				<button id='btnUp' type='button' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-arrow-up' aria-hidden='true'></span></button>
+  			</li>
+  		</ul>	
+  	</div>
+  </body>
+</html>
