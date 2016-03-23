@@ -2,7 +2,7 @@
 	margin-bottom: 20px;
 }
 
-#btnUp, #btnDown, #btnDelete{
+.delete, .up, .down{
 	float: right;
 	margin-right: 10px;
 }

@@ -19,9 +19,11 @@
   "homepage": "https://github.com/Jasonyang0422/NWind-SPA#readme",
   "dependencies": {
     "angular": "^1.5.2",
+    "bluebird": "^3.3.4",
     "body-parser": "^1.15.0",
     "bootstrap": "^3.3.6",
     "express": "^4.13.4",
+    "jquery": "^2.2.2",
     "mongoose": "^4.4.8"
   }
 }
