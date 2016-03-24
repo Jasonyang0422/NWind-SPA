@@ -4,10 +4,13 @@ var app = angular.module('spa', []);
 //not good naming.. how about SpasCtrl for your controller
 app.controller('SpaListCtrl', function($scope, $http){
   $scope.error = null;
-  var showItems = function($scope, $http){
+  var showItems = function(){
     $http.get('/spa')
       .then(function(response){
         $scope.spas = response.data;
+      })
+      .catch(function(){
+        $scope.error = true;
       });
   };
 	$scope.save = function(){
@@ -19,14 +22,20 @@ app.controller('SpaListCtrl', function($scope, $http){
       .then(function(){
         $scope.error = false;
         showItems();
+      })
+      .catch(function(){
+        $scope.error = true;
       });
 	};
 
 	$scope.delete = function(spa){
 		$http.delete('/spa/' + spa.id)
-			.then(function(response){
+			.then(function(){
         showItems();
-			});
+			})
+      .catch(function(){
+        $scope.error = true;
+      });
 	};
   showItems();
 
